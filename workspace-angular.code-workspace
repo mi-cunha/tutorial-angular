@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\MVC_biblioteca"
+		},
+		{
+			"path": "..\\..\\SUPERMERCADO"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\TYPESCRIPT_node"
+		},
+		{
+			"path": "..\\calculadora-cientifica"
+		},
+		{
+			"path": "..\\..\\SoulBrasil"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SoulBrasil"
+	}
+}

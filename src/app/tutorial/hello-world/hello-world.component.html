@@ -1,0 +1,60 @@
+<h1 class="text-center">Seu Primeiro Hello World</h1>
+<h3 class="text-center">
+    Vamos criar sua primeira aplicação Angular!
+</h3>
+<div class="container">
+    <mat-horizontal-stepper>
+        <mat-step label="Componente">
+            <p>
+                Em um novo prompt, entre na pasta do projeto e digite: <br>
+                <span>ng g componente ola-mundo</span>
+            </p>
+            <div>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-right-circle"></i></button>
+            </div>
+        </mat-step>
+
+        <mat-step label="Olá ou Hello??">
+            <p>
+                No arquivo <u>ola-mundo.component.html</u> digite entre as tags que desejar: <br>
+                <span>
+                    Olá mundo! 
+                </span>
+                
+            </p>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                        class="mdi mdi-arrow-left-circle"></i>Voltar</button>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-right-circle"></i></button>
+            </div>
+        </mat-step>
+
+        <mat-step label="Data Binding!">
+            <p>
+                Apague todo o conteúdo do arquivo <u>app.component.html</u> <br>
+                Digite entre as tags o nome do seletor que encontramos em <br>
+                <u>ola-mundo.component.ts</u> <br>
+                Esta tag chama todo o conteudo que se encontra no html do componente ola-mundo.
+            </p>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                        class="mdi mdi-arrow-left-circle"></i>Voltar</button>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-right-circle"></i></button>
+            </div>
+        </mat-step>
+
+        <mat-step label="Olá, Mundo!">
+           <p>
+            Acesse seu navegador na porta 4200 e confira sua frase na tela!
+           </p>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                        class="mdi mdi-arrow-left-circle"></i>Voltar</button>
+            </div>
+        </mat-step>
+
+    </mat-horizontal-stepper>
+</div>

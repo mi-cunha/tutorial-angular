@@ -1,0 +1,17 @@
+mat-tab-group{
+    height: 370px;
+    width: 700px;
+    margin: auto;
+    background-color: beige;
+    color: black;
+}
+mat-tab{
+    font-weight: 600;
+}
+p{
+    font-size: 38px;
+    margin: 50px;
+    line-height: 3rem;
+    text-align: center;
+
+}

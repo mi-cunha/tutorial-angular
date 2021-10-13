@@ -1,0 +1,29 @@
+p, ul{
+    color: black;
+}
+li{
+    margin: 10px;;
+}
+p, div{
+    margin-top: 20px;
+}
+.mdi{
+    font-size: 24px;
+}
+span{
+    font-family: monospace;
+    margin: 5px;
+    padding: 3px;
+    background-color: #2E353E;
+    color: rgb(224, 222, 222);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn-hello{
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+}

@@ -1,0 +1,340 @@
+<div class="container">
+    <div class="text-left">
+        <h1>Principais Conceitos no Angular</h1>
+        <h3>Se familiarize com alguns conceitos importantes que iremos abordar com frequência durante
+            este tutorial.</h3>
+    </div>
+
+    <!-- ANGULAR CLI -->
+
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title> Angular CLI </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                É a <b>Central de Controle</b> usada para operar o Angular na linha de comando. <br>
+                Através dela criamos um novo projeto e implementamos diversos recursos como componentes, módulos e
+                serviços. <br></p>
+            <h4>Comandos:</h4>
+            <ul>
+                <li><u>ng new:</u> cria um projeto</li>
+                <li><u>ng serve:</u> inicia um servidor web para testar a aplicação</li>
+                <li><u>ng generate:</u> cria os recursos citados acima) (pode ser usado abreviado, apenas g</li>
+                <li><u>ng build:</u> gera o codigo final para a publicação da aplicação</li>
+            </ul>
+            <p>
+                Facilita muito a criação de um novo componente pois já cria todos os arquivos que o compõem e já o
+                configura
+                no módulo, ou seja, o registra em app.module.ts.
+            </p>
+            <button mat-button><a
+                    href="https://www.alura.com.br/artigos/criando-aplicacoes-angular-com-angular-cli">Saiba
+                    Mais</a></button>
+
+        </mat-expansion-panel>
+
+        <!-- SINGLE PAGE APPLICATIONS -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title> SPA: Single Page Applications</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                Aplicação onde podemos navegar e interagir com elementos na tela <b>sem precisar recarregar a
+                    página</b>. <br>
+                Traz uma navegação mais fluida e interface mais amigável ao usuário. <br>
+                Exemplos de páginas que utilizam SPA: <br>
+            </p>
+            <div class="mt-2 mb-3">
+                <i class="mdi mdi-facebook"></i>
+                <i class="mdi mdi-twitter"></i>
+                <i class="mdi mdi-spotify"></i>
+                <i class="mdi mdi-gmail"></i>
+            </div>
+
+            <button mat-button><a
+                    href="https://www.devmedia.com.br/ja-ouviu-falar-em-single-page-applications/39009">Saiba
+                    Mais</a></button>
+
+        </mat-expansion-panel>
+
+        <!-- REST -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>REST</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                Significa <b>Transferência de Estado Representacional</b>
+                É um modelo arquitetural usado para transitar dados entre a aplicação front-end e o servidor. <br>
+                Faz a comunicação entre os dois. <br> <br>
+                Benefícios de utilizar REST:
+            </p>
+            <ul>
+                <li>Facilidade de execução</li>
+                <li>Alto aproveitamento da infraestrutura web</li>
+                <li>Os Web Services que adotam REST são mais leves e perfeitos na busca da metodologia ágil</li>
+            </ul>
+            <button mat-button><a href="https://www.totvs.com/blog/developers/rest/">Saiba
+                    Mais</a></button>
+
+        </mat-expansion-panel>
+
+        <!-- TYPESCRIPT -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>TypeScript</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                TypeScript é um superconjunto de JavaScript. <br>
+                Acrescenta recursos a linguagem JavaScript, como a <b>tipagem</b>, antecipando erros que só seriam pegos
+                ao
+                executar a aplicação, por exemplo. <br>
+                <b>Tipos</b> fornecem uma maneira de descrever a forma de um objeto, fornecendo melhor documentação e
+                permitindo que o TypeScript valide se seu código está funcionando corretamente. <br>
+                Foi criada com o objetivo de elevar o nível de código do JS, que era usado apenas do lado cliente e em
+                códigos pequenos. <br>
+                O Javascript suporta o paradigma de Programação Orientada a Objetos graças ao Typescript, podendo usar
+                variáveis com tipos definidos, criar classes e muito mais. <br>
+                O Angular faz toda a transformação de TS em JS para o navegador.
+            </p>
+
+            <button mat-button><a href="https://www.typescriptlang.org/docs/">Saiba
+                    Mais</a></button>
+
+        </mat-expansion-panel>
+
+        <!-- COMPONENTES -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Componentes</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                É aqui que criamos a lógica por trás de toda aplicação para o funcionamento das views. <br>
+                São classes, ou seja, tem suas propriedades e métodos, escritas em TypeScript e recebem o decorador
+                @Component. <br>
+                Este decorador tem propriedades como selector, templateUrl e styleUrl:
+            </p>
+            <ul>
+                <li><u>Selector:</u> como identificamos o componente no HTML raiz (app.component.html). <br>
+                    A tag deve ser usada dessa forma: <br></li>
+                <span>&lt;nomedoselector&gt; &lt;/nomedoselector&gt;</span>
+                <li><u>TemplateUrl:</u> o nome do arquivo HTML do componente</li>
+                <li><u>StyleUrl:</u> nome do arquivo de estilo do componente</li>
+            </ul>
+            <p>
+                No arquivo app.module.ts, as referências aos componentes devem estar em <b>declarations</b>!
+            </p>
+            <button mat-button><a
+                    href="https://www.devmedia.com.br/angular-components-conhecendo-e-configurando-no-seu-projeto/40734">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- ROTAS -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Rotas</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class=" text-justify">
+                Uma rota está diretamente relacionada a URL, ou seja, também funciona como um <b>localizador de um
+                    componente</b>. <br>
+                Para usar rotas é possível definí-las das seguintes formas:
+            </p>
+            <ul>
+                <li>no root module</li>
+                <li>no feature module</li>
+                <li>no módulo de rotas</li>
+            </ul>
+
+            <button mat-button><a href="https://balta.io/blog/angular-rotas-guardas-navegacao">Saiba
+                    Mais</a></button>
+
+        </mat-expansion-panel>
+
+        <!-- MÓDULOS -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Módulos</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                No contexto do Angular <b>um módulo é a forma de agrupar componentes</b>, diretivas, pipes e serviços
+                que são relacionados. <br>
+                Um aplicação Angular possui vários módulos, cada um com um propósito. <br>
+                Essa modularidade no Angular é chamada de NgModules, cada aplicação é composta por pelo menos uma classe
+                NgModule que é o módulo root da aplicação. <br>
+                Esse módulo root por padrão é chamado de <b>AppModule</b>. <br>
+                Para definir um módulo Angular devemos usar o decorator de classe @NgModule, que tem como principais
+                propriedades:
+            </p>
+            <ul>
+                <li><u>imports:</u> array com outros módulos que são necessários por componentes declarados nesse
+                    módulo.</li>
+                <li><u>declarations:</u> recebe um array de componentes, diretivas e pipes que fazem parte do módulo.
+                </li>
+                <li><u>exports:</u> define o conjunto de declarações(componentes, pipes etc) que ficam disponíveis para
+                    outros módulos.</li>
+                <li><u>providers:</u> declara os serviços, se for o módulo root, os serviços ficam disponíveis para toda
+                    a aplicação.</li>
+            </ul>
+            <button mat-button><a
+                    href="https://qastack.com.br/programming/40073941/whats-the-difference-between-an-angular-component-and-module">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- SERVIÇOS -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Serviços</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                Os services contêm métodos que mantêm os dados ao longo da vida de um aplicativo, ou seja, os dados não
+                são
+                atualizados e estão disponíveis o tempo todo. <br>
+                O principal objetivo de um serviço é <b>organizar e compartilhar lógica de negócios</b>, modelos ou
+                dados e funções com diferentes componentes de uma aplicação
+                Angular. <br>
+                Criar um service ajuda a dividir o aplicativo da web em unidades lógicas pequenas e diferentes que podem
+                ser reutilizadas.
+
+            </p>
+            <button mat-button><a href="https://www.youtube.com/watch?v=1-HAHOc4ZJY">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- DIRETIVAS -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Diretivas</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                As diretivas informam ao Angular para <b>anexar um comportamento especificado a um elemento
+                    existente</b>. <br>
+                São usadas com componentes, principalmente para criar tags personalizadas em uma aplicação Angular. <br>
+                Essas diretivas podem alterar o layout do DOM adicionando e removendo elementos DOM de visualização.
+                <br>
+                Alguns tipos de diretivas podem ser vistos abaixo:
+            </p>
+            <button mat-button><a href="http://www.macoratti.net/18/06/ang_diret2.htm">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- DIRETIVAS ESTRUTURAIS -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Diretivas Estruturais</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                Separam completamente a lógica e dados da aplicação, que é escrita em Typescript, da lógica de exibição,
+                que é declarativa no HTML do componente. <br>
+            </p>
+            <ul>
+                <li><u>ngIf:</u> Similiar a estrutura condicional if. No caso, se ‘true’, o elemento HTML deve ser
+                    renderizado para o usuário. </li>
+                <li><u>ngFor:</u>Similar a estrutura de laço for. Permite percorremos objetos iteráveis como arrays.
+                </li>
+                <li><u>ngSwitch:</u>A estrutura switch é utilizada para verificarmos diversas condições de uma única
+                    vez, e executarmos blocos de código de acordo com o resultado dessas condições.</li>
+            </ul>
+            <button mat-button><a href="http://www.macoratti.net/18/06/ang_diret1.htm">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- PIPES -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Pipes</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                Os pipes são um recurso muito utilizado no Angular <b>para formatar a exibição de valores
+                    corretamente</b>.<br>
+                Existem uma série de pipe disponíveis para uso, disponibilizados pelo próprio Angular.
+                Como por exemplo: <br>
+            </p>
+            <ul>
+                <li><u>DatePipe</u> para datas transformando datas de formato americano em brasileiro</li>
+                <li><u>UpperCasePipe</u> para tornar letras maiúsculas</li>
+                <li><u>LowerCasePipe</u>para tornar letras minúsculas</li>
+                <li><u>CurrencyPipe</u> para moedas, apresentando seu valor em reais (formato BRL) ou o formato que
+                    quiser</li>
+            </ul>
+            <button mat-button><a href="https://www.devmedia.com.br/angular-filter-e-pipes/40798">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- DATA BINDING -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Data Binding</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                <b>É a sincronização automática de dados entre o model e a view</b> , ou seja vínculo entre os dados da
+                classe e o dado exibido no template.<br>
+                Ao demarcar tags HTMLs com expressões AngularJS, como por exemplo a interpolação, o
+                framework irá associar um watcher para atualizar a view toda vez que o $scope model alterar. <br>
+                A função tambem tem um listener, onde irá ser chamado quando o valor de message for alterado. <br>
+                Exemplos:
+            </p>
+            <ul>
+                <li>Vincular um evento de clique a um método da classe do componente</li>
+                <li><u>Interpolação:</u> Faz a conexão entre o componente.ts e o html. Sua sintaxe é substituida pelo
+                    valor do atributo.Consiste em adicionar o nome da variável que se deseja chamar entre chaves duplas
+                    dentro do elemento onde deseja que seu valor apareça. Então sempre que o valor do
+                    atributo mudar, mudará automaticamente na interface.</li>
+            </ul>
+            <button mat-button><a href="https://www.youtube.com/watch?v=rlVxG2lG1Tk">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- PROPERTY BINDING -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Property Binding</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                É um <u>tipo de data binding</u>, um dos mais utilizados. <br>
+                Permite que se defina a propriedade de um elemento da
+                view e atualiza o valor da propriedade no componente e o conecta ao elemnto na view. <br>
+                Sua sintaxe é: O atributo HTML deve ficar entre colchetes e o atributo da classe utiliza aspas.
+            </p>
+            <button mat-button><a
+                    href="https://www.telerik.com/blogs/understanding-angular-property-binding-and-interpolation">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+
+        <!-- EVENT BINDING -->
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Event Binding</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="text-justify">
+                Significa associação de eventos. <br>
+                Usamos event binding para vincular um código da aplicação a um certo evento disparado pelo computador. <br>
+                Podemos responder a qualquer vento disponível na API do DOM que é quem
+                conecta o que vemos na pagina ao código de cada componente da aplicação. <br>
+                O event binding diz para o Angular qual o evento queremos vincular e o que pretendemos fazer com ele. <br>
+
+                Exemplos:
+            </p>
+            <ul>
+                <li><u>(click):</u> clicar com o mouse em um botão</li>
+                <li><u>KeyUp:</u> quando soltamos uma tecla do teclado</li>
+                <li><u>KeyDown:</u> quando a tecla do teclado é pressionada</li>
+                <li><u>KeyPress:</u> enquanto a tela esta sendo pressionada p evento é emitido</li>
+            </ul>
+            <button mat-button><a href="https://www.youtube.com/watch?v=WF28rLBangw">Saiba
+                    Mais</a></button>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

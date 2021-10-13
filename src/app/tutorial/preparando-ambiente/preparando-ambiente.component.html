@@ -1,0 +1,102 @@
+<h1 class="text-center">Preparação do Ambiente de Desenvolvimento</h1>
+<h3>Ao criar um novo projeto, o Angular cria todos os arquivos iniciais necessários e também instala todas as
+    dependências necessárias para seu funcionamento. </h3>
+
+<div class="container">
+    <mat-vertical-stepper>
+        <mat-step label="Instalação do node.js + npm">
+            <p>
+                Faça a instalação da ultima versão do node.js para ter acesso ao comando npm
+            </p>
+            <div>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-down-thin-circle-outline"></i></button>
+            </div>
+        </mat-step>
+    
+        <mat-step label="Instalação do Angular CLI">
+            <p>
+                Abra seu terminal de preferência e digite:
+                <span>npm install -g @angular/cli</span> <br>
+                <b>install-</b> instala um novo pacote <br>
+                <b>g</b> – instala globalmente, não sendo necessário
+                instalar novamente em cada novo projeto criado
+            </p>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                        class="mdi mdi-arrow-up-thin-circle-outline"></i>Voltar</button>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-down-thin-circle-outline"></i></button>
+            </div>
+        </mat-step>
+    
+        <mat-step label="Utilizando o Angular CLI">
+            <p>Como falado anteriormente em <a href="/conceitos">Conceitos</a>, usamos alguns comandos específicos no
+                Angular CLI:</p>
+            <ul>
+                <li>devemos sempre digitar <span>ng</span> antes de todo comando que queremos executar</li>
+                <li><span>ng version</span> para testar se o CLI foi corretamente instalado</li>
+                <li><span>ng new nome-da-aplicacao </span> após entrar na pasta onde deseja que ele seja instalado</li>
+            </ul>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                        class="mdi mdi-arrow-up-thin-circle-outline"></i>Voltar</button>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-down-thin-circle-outline"></i></button>
+            </div>
+        </mat-step>
+    
+        <mat-step label="Criando uma nova aplicação">
+            <p>
+                Durante a criação da aplicação no cmd, você pode escolher suas preferências, mas caso não esteja
+                familiarizado com o Angular, sugiro as seguintes opções:
+            </p>
+            <ul>
+                <li>Escolher não ao criar as rotas</li>
+                <li>Optar por CSS como folha de estilo</li>
+            </ul>
+            <p>
+                Ao finalizar entre na pasta da aplicação recém criada:
+                <span>cd nome-da-aplicação</span> <br> <br>
+                E em seguida execute o seguinte comando:
+                <span>ng serve</span>
+                Este comando executa a aplicação localmente como ambiente de desenvolvimento onde podemos alterar o código e
+                ver o resultado em tempo real.
+                obs.: na primeira vez ao executar o comando será perguntado se gostaria de compartilhar dados de uso com os
+                desenvolvedores, fica a seu critério.
+            </p>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                        class="mdi mdi-arrow-up-thin-circle-outline"></i>Voltar</button>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-down-thin-circle-outline"></i></button>
+            </div>
+        </mat-step>
+    
+        <mat-step label="Executando em localhost:4200">
+            <p>
+                Após a mensagem de sucesso, abra a aplicação em seu navegador na porta indicada. <br> <br>
+                A porta padrão é <span>localhost:4200</span> <br> <br>
+                Para interromper o servidor de desenvolvimento a qualquer momento, utilize o atalho: 
+                <span>ctrl + C</span>
+    
+    
+            </p>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                    class="mdi mdi-arrow-up-thin-circle-outline"></i>Voltar</button>
+                <button mat-button color="primary" matStepperNext>Próximo <i
+                        class="mdi mdi-arrow-down-thin-circle-outline"></i></button>
+            </div>
+        </mat-step>
+    
+        <mat-step label="Execute seu primeiro Hello World!">
+            <button class="mt-4 btn-hello"><a href="/hello-world">Hello, Angular!</a></button>
+            <div>
+                <button mat-button color="primary" matStepperPrevious> <i
+                    class="mdi mdi-arrow-up-thin-circle-outline"></i>Voltar</button>
+            </div>
+        </mat-step>    
+    
+    </mat-vertical-stepper>
+</div>

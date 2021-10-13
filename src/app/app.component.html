@@ -1,0 +1,48 @@
+<mat-toolbar class="navbar" color="warn">
+
+    <div>
+        <span class="mdi mdi-menu menu-btn" (click)="localSideNav.toggle()"></span>
+    </div>
+    <div class="d-flex flex-end logo-title">
+        <span class="mdi mdi-angularjs"></span>
+
+        <h1><a id="link-title" href="/">Angular para Iniciantes</a></h1>
+    </div>
+
+    <div>
+        <a href="" class="mdi mdi-brightness-6"></a>
+        <a href="https://github.com/mi-cunha" class="mdi mdi-github"></a>
+        <a href="https://www.linkedin.com/in/noemi-cunha/" class="mdi mdi-linkedin"></a>
+    </div>
+
+</mat-toolbar>
+
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" #localSideNav>
+        <mat-nav-list>
+            <a class="branco" mat-list-item routerLink="/">Introdução</a>
+            <a class="branco" mat-list-item routerLink="/conhecendo-angular">Conhecendo o Angular</a>
+            <a class="branco" mat-list-item routerLink="/conceitos">Conceitos</a>           
+            <a class="branco" mat-list-item routerLink="/preparando-ambiente">Preparando o Ambiente</a>
+            <a class="branco" mat-list-item routerLink="/hello-world">Seu Primeiro Hello World!</a>
+            <a class="branco" mat-list-item routerLink="/estrutura-aplicacao">Estrutura da Aplicação</a>                    
+        </mat-nav-list>
+    </mat-sidenav>
+
+        <mat-sidenav-content>
+
+            <main>                
+                    <router-outlet></router-outlet>                
+            </main>
+
+        </mat-sidenav-content>                
+    
+</mat-sidenav-container>
+
+<mat-toolbar color="warn" class="footer">
+    <span class="mr-4">Desenvolvido por Noemi Cunha</span>
+    <i class="mdi mdi-star amarelo"></i>
+    <span class="ml-4">2021 - SoulCode</span>
+</mat-toolbar>
+

@@ -1,0 +1,89 @@
+<div class="container">
+
+    <div class="text-center">
+        <h1>Estrutura da Aplicação</h1>
+
+        <h3>Entenda a estrutura do seu projeto:</h3>
+    </div>
+
+
+    <mat-tab-group animationDuration="1500ms">
+        <mat-tab label="index.html">
+            <p>
+                Arquivo html raiz, é a base da Single Page Application
+            </p>
+
+        </mat-tab>
+        <mat-tab label="style.css">
+            <p>
+                Arquivo CSS que é aplicado globalmente na aplicação.
+            </p>
+        </mat-tab>
+        <mat-tab label="tsconfig.app.json">
+            <p>
+                Arquivo de configuração do TypeScript
+            </p>
+        </mat-tab>
+        <mat-tab label="karma.config.js">
+            <p>
+                Biblioteca para criação de testes unitários.
+            </p>
+        </mat-tab>
+        <mat-tab label="package.json">
+            <p>
+                Gerencia as dependências do projeto ao executar o npm install e as instala através do cmd no diretório
+                node_modules.
+            </p>
+        </mat-tab>
+        <mat-tab label="pasta assets">
+            <p>
+                Módulos, componentes, serviços, páginas e elementos visuais
+            </p>
+        </mat-tab>
+        <mat-tab label="node_modules">
+            <p>
+                Diretório responsável por armazenar as nossas bibliotecas, quando nós adicionamos algo no nosso arquivo
+                package.json, ele irá gerenciar os pacotes e as suas versões dentro desse diretório.
+            </p>
+        </mat-tab>
+        <mat-tab label="pasta src">
+            <p>
+                É o diretório da aplicação e contém tudo referente a ela: regras de negócio, dados, configurações,
+                imagens,
+                fontes etc
+            </p>
+        </mat-tab>
+        <mat-tab label="src/app">
+            <p>
+                Módulos, componentes, serviços, páginas e elementos visuais
+            </p>
+        </mat-tab>
+        <mat-tab label="app.component">
+            <p>
+                AppComponent é o componente principal da aplicação.
+                Formado por 4 arquivos:
+            </p>
+            <ul>
+                <li><u>.css:</u>Arquivo de estilo do componente. No Angular cada componente tem o seu para facilitar a
+                    organização do código.</li>
+                <li><u>.html:</u> parte visual da raiz do projeto (aqui fica o código da página de boas-vindas que você
+                    vê
+                    ao acessar
+                    o localhost) </li>
+                <li><u>.spec.ts:</u>Arquivo de teste do componente</li>
+                <li><u>.ts:</u> Aqui a classe é definida com suas classes e método e propriedades. Responsável pela
+                    lógica
+                    de exibição e os dados do componente que estarão disponíveis através do Html </li>
+            </ul>
+
+        </mat-tab>
+        <mat-tab label="app.module.ts">
+            <p>
+                Módulo padrão da aplicação, outros módulos que forem criados devem ser importados aqui.
+            </p>
+        </mat-tab>
+
+
+
+    </mat-tab-group>
+</div>
